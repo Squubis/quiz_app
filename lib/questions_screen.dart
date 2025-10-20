@@ -31,7 +31,7 @@ class _QuestionsScreenState extends State<QuestionsScreen>{
           textAlign: TextAlign.center,
           ),
           const SizedBox(height: 30),
-          ...currentQuestion.answers.map((item){ //... is a forloop that basically adds a new list into the old list, which allows us to get a list of answer buttons to be injected into the screen properly
+          ...currentQuestion.getShuffledAnswers().map((item){ //... is a forloop that basically adds a new list into the old list, which allows us to get a list of answer buttons to be injected into the screen properly
             return AnswerButton(
               answerText: item, 
               onTap: (){});
