@@ -13,7 +13,32 @@ class _QuestionsScreenState extends State<QuestionsScreen>{
   @override
   Widget build(BuildContext context) {
     
-    return Text("Questions Screen");
+    return SizedBox(
+      width: double.infinity,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: 
+      [
+        const Text("Question... ",
+        style: TextStyle(
+          color: Colors.white,
+        ),
+        ),
+        const SizedBox(height: 30),
+        ElevatedButton(onPressed: (){},
+         child: const Text("Answer 1"),
+         ),
+         ElevatedButton(onPressed: (){},
+         child: const Text("Answer 2"),
+         ),
+         ElevatedButton(onPressed: (){},
+         child: const Text("Answer 3"),
+         ),
+         ElevatedButton(onPressed: (){},
+         child: const Text("Answer 4"),
+         ),
+      ],),
+    );
   }
   
 }
