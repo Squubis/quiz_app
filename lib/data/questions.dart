@@ -22,4 +22,16 @@ const questions = [
     "Tanjiro",
     "Kokushibu"
   ]),
+  QuizQuestion("Where does Elden Ring take place?", [
+    "The Lands Between",
+    "Narnia",
+    "Oshuane",
+    "The Lands A far"
+  ]),
+  QuizQuestion("Who's the Chosen One in Star Wars?", [
+    "Anakin Skywalker",
+    "Obi-Wan Kenobi",
+    "Mace Windu",
+    "Luke Skywalker"
+  ])
 ];
